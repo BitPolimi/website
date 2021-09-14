@@ -1,9 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `BitPolimi`,
+    description: `La prima associazione del Politecnico di Milano che si occupa di Bitcoin e crypto. Proponiamo progetti innovativi in grado di formarti su questo nuovo mondo.`,
+    siteUrl: `https://www.bitpolimi.it`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
