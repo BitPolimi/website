@@ -1,0 +1,34 @@
+.main-container {
+  height: 100vh;
+  display: grid;
+  padding: 4rem;
+  grid-template-columns: 50% 50%;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+
+  .text-container {
+    h1 {
+      font-size: 3.5rem;
+    }
+
+    p {
+      font-size: 2.25rem;
+      line-height: 1.25rem;
+      cursor: pointer;
+
+      &.disabled {
+        color: rgba($color: white, $alpha: 0.1);
+        cursor: initial;
+      }
+
+      &.second {
+        padding-left: 1rem;
+      }
+
+      &.third {
+        padding-left: 2rem;
+      }
+    }
+  }
+}

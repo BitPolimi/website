@@ -5,38 +5,14 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-}
 
-.landing-page {
-  display: grid;
-
-  padding: 2rem;
-
-  grid-template-columns: 50% 50%;
-
-  color: white;
-  font-family: "Red Hat Display", sans-serif;
-
-  height: 100vh;
-
-  box-sizing: border-box;
-
-  background-image: url("../images/landing-bg.svg");
+  background-color: #00000d;
+  background-image: url(../images/tree.svg);
   background-size: cover;
+  background-position: 2rem 4rem;
+  background-repeat: no-repeat;
 
-  .main-menu {
-    display: flex;
-
-    flex-direction: column;
-    align-items: center;
-
-    h1 {
-      font-size: 3rem;
-      font-weight: normal;
-    }
-
-    p {
-      font-size: 2.25rem;
-    }
-  }
+  font-family: "Red Hat Display", sans-serif;
+  color: white;
+  user-select: none;
 }
