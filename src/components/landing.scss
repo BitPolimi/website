@@ -1,16 +1,46 @@
 .main-container {
   height: 100vh;
-  display: grid;
   padding: 4rem;
-  grid-template-columns: 50% 50%;
   box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 40% 60%;
+  grid-template-areas:
+    "title logo"
+    "links logo";
+
   justify-content: center;
   align-items: center;
 
-  .text-container {
-    h1 {
-      font-size: 3.5rem;
+  @media (max-width: 768px) {
+    padding: 2rem;
+
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "title"
+      "logo"
+      "links";
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    grid-area: title;
+    align-self: flex-end;
+
+    @media (max-width: 768px) {
+      text-align: center;
     }
+  }
+
+  .logo-container {
+    grid-area: logo;
+  }
+
+  .text-container {
+    grid-area: links;
+    align-self: flex-start;
 
     p,
     a {
