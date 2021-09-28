@@ -15,4 +15,11 @@ body {
   font-family: "Red Hat Display", sans-serif;
   color: white;
   user-select: none;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

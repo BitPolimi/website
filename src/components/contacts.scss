@@ -19,6 +19,10 @@
     font-weight: normal;
   }
 
+  a.disabled {
+    pointer-events: none;
+  }
+
   .col1 {
     grid-area: col1;
   }
