@@ -12,7 +12,7 @@ const links = {
 
 const Contacts = () => {
   return (
-    <div className="contacts-container">
+    <div id="contacts" className="contacts-container">
       <h1 className="title">CONTATTI</h1>
       <div className="col1">
         <a href={links.telegram}>&gt; Telegram</a>
@@ -33,7 +33,9 @@ const Contacts = () => {
         </a>
       </div>
       <div className="btn">
-        <a href="">DIVENTA UN SOCIO</a>
+        <a href="" className="disabled" aria-disabled>
+          DIVENTA UN SOCIO
+        </a>
       </div>
     </div>
   )

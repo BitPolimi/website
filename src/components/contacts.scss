@@ -38,6 +38,12 @@
       width: fit-content;
       padding: 1rem 1.5rem;
       border-radius: 8px;
+
+      &.disabled {
+        color: grey;
+        background-color: #0066ff33;
+        cursor: default;
+      }
     }
   }
 

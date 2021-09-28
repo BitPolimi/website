@@ -12,10 +12,16 @@
       font-size: 3.5rem;
     }
 
-    p {
+    p,
+    a {
       font-size: 2.25rem;
       line-height: 1.25rem;
       cursor: pointer;
+
+      // a specific styles
+      text-decoration: none;
+      color: white;
+      // end
 
       &.disabled {
         color: rgba($color: white, $alpha: 0.1);
