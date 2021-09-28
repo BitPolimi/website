@@ -17,5 +17,12 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-anchor-links`,
+    {
+      resolve: `gatsby-plugin-scroll-indicator`,
+      options: {
+        color: "#FF914D",
+      },
+    },
   ],
 }
