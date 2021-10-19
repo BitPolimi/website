@@ -8,6 +8,7 @@ const links = {
   discord: "https://discord.gg/qcU3knUYSe",
   github: "https://github.com/BitPolimi",
   instagram: "https://www.instagram.com/bitpolimi/",
+  youtube: "https://www.youtube.com/channel/UCyfLMvaX5uFmpcjwNWMMH0Q",
 }
 
 const Contacts = () => {
@@ -16,7 +17,7 @@ const Contacts = () => {
       <h1 className="title">CONTATTI</h1>
       <div className="col1">
         <a href={links.telegram}>&gt; Telegram</a>
-        <a href="" className="second disabled" aria-disabled>
+        <a href={links.youtube} className="second">
           &gt; YouTube
         </a>
         <a href={links.linkedin} className="third">
