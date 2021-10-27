@@ -14,4 +14,4 @@ Verrà usato `React` con il framework `Gatsby`, per scrivere le pagine si userà
 
 ### Contribuire
 
-Il risultato finale dovrà essere [questo](https://www.figma.com/file/rsUHiWOdu6pkbw33PomMRh/BitPolimi-WebSite?node-id=0%3A1), il modo migliore per contribuire è unirsi al nostro server [Discord](https://discord.gg/yTxfuRBq9A) e farsi assegnare una sezione del sito web da completare, una volta fatto ciò basterà fare un fork del branch `main` e quando si finisce fare una PR, questa verrà testata ed eventualmente accettata nel branch `main` da cui poi verrà buildato il sito.
+Il risultato finale dovrà essere [questo](https://www.figma.com/file/6kLGO7PNPgZkjYWlDFdBqH/BitPolimi-WebSite), il modo migliore per contribuire è unirsi al nostro server [Discord](https://discord.gg/yTxfuRBq9A) e farsi assegnare una sezione del sito web da completare, una volta fatto ciò basterà fare un fork del branch `main` e quando si finisce fare una PR, questa verrà testata ed eventualmente accettata nel branch `main` da cui poi verrà buildato il sito.
