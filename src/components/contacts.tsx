@@ -34,7 +34,7 @@ const Contacts = () => {
         </a>
       </div>
       <div className="btn">
-        <a href="" className="disabled" aria-disabled>
+        <a href="" className="disabled">
           DIVENTA UN SOCIO
         </a>
       </div>
