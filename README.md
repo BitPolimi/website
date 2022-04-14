@@ -1,17 +1,34 @@
-# BitPolimi Website
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Sito web dell'associazione `Bit Polimi` costruito con `Gatsby`
+## Getting Started
 
-Hostato su `GitHub Pages` al link https://www.bitpolimi.it
+First, run the development server:
 
-## Se vuoi contribuire
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-### Requisiti
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-In realtà non ce ne sono molti, vi chiederei solamente di conoscere un po' dei soliti `HTML`, `CSS` e `JavaScript` ed almeno una conoscenza base di software per il controllo della versione come `Git`.
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-Verrà usato `React` con il framework `Gatsby`, per scrivere le pagine si userà `TypeScript` e per gli stili `SCSS`. Non è necessario conoscere nessuna di queste tecnologie, verrà fatta una veloce panoramica che dovrebbe chiarire la maggior parte dei dubbi e in qualsiasi caso si può chiedere agli altri contributor o direttamente al rappresentante.
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-### Contribuire
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-Il risultato finale dovrà essere [questo](https://www.figma.com/file/6kLGO7PNPgZkjYWlDFdBqH/BitPolimi-WebSite), il modo migliore per contribuire è unirsi al nostro server [Discord](https://discord.gg/yTxfuRBq9A) e farsi assegnare una sezione del sito web da completare, una volta fatto ciò basterà fare un fork del branch `main` e quando si finisce fare una PR, questa verrà testata ed eventualmente accettata nel branch `main` da cui poi verrà buildato il sito.
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
