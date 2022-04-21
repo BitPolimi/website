@@ -9,7 +9,7 @@ body {
 .background {
 	min-height: 100vh;
 	padding: 2rem;
-	background-color: #010111;
+	background-color: #00000d;
 
 	.page {
 		max-width: 900px;
@@ -23,7 +23,7 @@ body {
 
 		.titlebar {
 			margin-top: 2rem;
-			background-color: #00000d;
+			background-color: #010111;
 			padding: 1rem;
 
 			display: flex;
@@ -85,12 +85,12 @@ body {
 			}
 		}
 
-		.projects {
+		.info {
 			height: 40vh;
 			background-color: green;
 		}
 
-		.info {
+		.projects {
 			height: 40vh;
 			background-color: purple;
 		}

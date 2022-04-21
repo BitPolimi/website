@@ -1,16 +1,30 @@
-import { forwardRef } from "react";
-import { Ref } from "react";
 import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 
 import miniLogo from "../public/minilogo.svg";
 
-interface Props {
-	expanded: boolean;
-}
+const TitleBar = () => {
+	const titleBarRef = useRef<HTMLDivElement>(null);
+	const [expanded, setExpanded] = useState(false);
 
-const TitleBar = forwardRef((props: Props, ref: Ref<HTMLDivElement>) => {
+	const handleScroll = (_: Event) => {
+		if (titleBarRef.current != null) {
+			const position = titleBarRef.current.getBoundingClientRect().top;
+
+			setExpanded(position == 0);
+		}
+	};
+
+	useEffect(() => {
+		window.addEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	});
+
 	return (
-		<div ref={ref} className={`titlebar ${props.expanded ? "expanded" : ""}`}>
+		<div ref={titleBarRef} className={`titlebar ${expanded ? "expanded" : ""}`}>
 			<div className="minilogo">
 				<Image src={miniLogo} alt="" />
 			</div>
@@ -20,6 +34,6 @@ const TitleBar = forwardRef((props: Props, ref: Ref<HTMLDivElement>) => {
 			<a href="">CONTACTS</a>
 		</div>
 	);
-});
+};
 
 export default TitleBar;
