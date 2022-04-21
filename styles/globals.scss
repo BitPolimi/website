@@ -27,17 +27,50 @@ body {
 			padding: 1rem;
 
 			display: flex;
-			justify-content: space-around;
+			justify-content: space-between;
 
 			position: sticky;
 			top: 0;
 
 			.spacer {
-				display: none;
+				visibility: hidden;
+				flex: 0;
+				transition: all 1s;
 			}
 
 			.minilogo {
-				display: none;
+				display: flex;
+				text-align: left;
+				visibility: hidden;
+				opacity: 0;
+				flex: 0;
+				transition: all 1s;
+				max-width: calc(1.4rem + 1em);
+				margin: -0.8rem 0;
+				align-items: center;
+			}
+
+			a {
+				text-align: center;
+				flex: 1;
+				transition: flex 1s;
+			}
+
+			&.expanded {
+				.spacer {
+					visibility: visible;
+					flex: 1;
+				}
+
+				.minilogo {
+					visibility: visible;
+					flex: 1;
+					opacity: 1;
+				}
+
+				a {
+					flex: 0;
+				}
 			}
 
 			a {
@@ -54,14 +87,17 @@ body {
 
 		.projects {
 			height: 40vh;
+			background-color: green;
 		}
 
 		.info {
 			height: 40vh;
+			background-color: purple;
 		}
 
 		.contacts {
 			height: 40vh;
+			background-color: green;
 		}
 	}
 }
