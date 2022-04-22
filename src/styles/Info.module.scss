@@ -1,0 +1,17 @@
+@import "variables";
+
+.info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding: 2rem 6rem;
+	box-sizing: border-box;
+
+	text-align: center;
+
+	height: 400px;
+
+	background-color: $primary-color;
+	// color: $bg-color;
+}

@@ -1,0 +1,13 @@
+@import "variables";
+
+.contacts {
+	padding: 3rem;
+
+	background-color: $primary-color;
+
+	.link {
+		text-decoration: none;
+		color: $secondary-color;
+		font-weight: bold;
+	}
+}

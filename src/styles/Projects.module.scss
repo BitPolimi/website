@@ -1,0 +1,52 @@
+@import "variables";
+
+.projects {
+	display: grid;
+
+	grid-template-rows: repeat(3, auto);
+	row-gap: 3rem;
+
+	padding: 3rem;
+
+	background-color: $secondary-color;
+	color: $text-color;
+
+	.project {
+		display: grid;
+		box-sizing: border-box;
+
+		grid-template-rows: repeat(2, auto);
+		grid-template-columns: repeat(2, 50%);
+		grid-template-areas:
+			"title title"
+			"left right";
+
+		column-gap: 2rem;
+
+		.title {
+			grid-area: title;
+		}
+
+		.text {
+			grid-area: right;
+		}
+
+		.image {
+			grid-area: left;
+		}
+
+		&:nth-of-type(even) {
+			.title {
+				text-align: right;
+			}
+
+			.text {
+				grid-area: left;
+			}
+
+			.image {
+				grid-area: right;
+			}
+		}
+	}
+}

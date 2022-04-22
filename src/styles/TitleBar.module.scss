@@ -1,0 +1,67 @@
+@import "variables";
+
+.titlebar {
+	margin-top: 2rem;
+	background-color: $secondary-color;
+	padding: 1rem;
+
+	z-index: 999;
+
+	display: flex;
+	justify-content: space-between;
+
+	position: sticky;
+	top: 0;
+
+	.spacer {
+		visibility: hidden;
+		flex: 0;
+		transition: all $transition-duration;
+	}
+
+	.minilogo {
+		display: flex;
+		text-align: left;
+		visibility: hidden;
+		opacity: 0;
+		flex: 0;
+		transition: all $transition-duration;
+		max-width: calc(1.4rem + 1em);
+		margin: -0.8rem 0;
+		align-items: center;
+	}
+
+	a {
+		text-align: center;
+		flex: 1;
+		transition: flex $transition-duration;
+	}
+
+	&.expanded {
+		.spacer {
+			visibility: visible;
+			flex: 1;
+		}
+
+		.minilogo {
+			visibility: visible;
+			flex: 1;
+			opacity: 1;
+		}
+
+		a {
+			flex: 0;
+		}
+	}
+
+	a {
+		margin-left: 1rem;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 120%;
+
+		&:visited {
+			color: white;
+		}
+	}
+}
